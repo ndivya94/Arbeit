@@ -15,9 +15,7 @@ public class CreateselltktLkUpTest extends BaseTest
 {
 	@Test
 	public void selltktLkUp() throws Throwable
-	
 	{
-	
 	  LoginPage lp= new LoginPage();
 	  FileLib flib = new FileLib();
 	  lp.loginToApp(flib.readpropertyData(PROP_PATH, "username"),flib.readpropertyData(PROP_PATH, "password"));

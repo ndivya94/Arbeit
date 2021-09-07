@@ -15,7 +15,9 @@ public class ViewSalesListpage
 
 		//@FindBy(xpath="//input[@value=\"Create Task\"]") private WebElement createtaskBtn;
 		@FindBy(xpath="//input[@value=\"5108\"]") private WebElement checkbox1;
-		@FindBy(xpath="//input[@value=\"5106\"]") private WebElement createtaskBtn;
+		@FindBy(xpath="//input[@value=\"5106\"]") private WebElement checkbox2;
+		@FindBy(xpath="//input[@value=\"Delete\"]") private WebElement deletebtn;
+		
 	public  ViewSalesListpage()
 		{
 			PageFactory.initElements(BaseTest.driver, this);
@@ -25,8 +27,11 @@ public class ViewSalesListpage
 		viewbtn.click();
 		WebDriverCommonLib wlib = new WebDriverCommonLib();
 		wlib.selectoption(viewbtn, 0);
-		createtaskBtn.click();
+		//createtaskBtn.click();
 		wlib.alert();
+		checkbox1.click();
+		checkbox2.click();
+		deletebtn.click();
 		
 		}
 

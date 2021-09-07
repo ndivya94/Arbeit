@@ -3,6 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
+      <class name="com.arbeit.salesOrder.ViewSalesListTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="SalesTest"/>
+        </methods>
+      </class> <!-- com.arbeit.salesOrder.ViewSalesListTest -->
       <class name="com.arbeit.salesOrder.CreateselltktLkUpTest">
         <methods>
           <include name="openBrowser"/>
